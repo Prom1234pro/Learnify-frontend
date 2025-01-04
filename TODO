@@ -1,0 +1,13 @@
+Connect the backend with the frontend
+(UPLOADING DOCS, SUMMARY, DOWNLOADING TEXT and CHAT WITH DOCS)
+
+Add message to show while offline in (sidebar, creating new chat and asking questions on docs)
+Change the username showing on the side bar
+
+Add ability to attach images/files and paste files on the text area
+Add some css to make the site looks more presentable
+Add ability to delete a chat session, delete a message, rename a chat session and tag a chat
+
+Improve the interactiveness of the chat with docs
+Add ability to stop while generating
+Add buttons to chat messages

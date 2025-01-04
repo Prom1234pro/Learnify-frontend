@@ -1,0 +1,108 @@
+/* Chat Input Container */
+.chat-input-container {
+    padding: 1rem;
+    border-top-width: 1px;
+    width: 100%;
+  }
+  
+  .chat-input-container--dark {
+    border-color: #1d252e; /* slate-800 */
+  }
+  
+  .chat-input-container--light {
+    border-color: #e2e8f0; /* slate-200 */
+  }
+
+
+  .chat-input-container--dark .chat-form {
+    background-color: #0b0d0e;
+    box-shadow: 0px 0px 4px rgba(250, 249, 249, 0.561);
+  }
+
+  .chat-input-container--light .chat-form {
+    background-color: #fbfbfb;
+    box-shadow: 0px 0px 4px rgba(34, 34, 34, 0.561);
+  }
+  /* Chat Form */
+  .chat-form {
+    max-width: 48rem;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    overflow: hidden;
+    border-radius: 1.5em;
+    padding-right: .3rem;
+  }
+  
+  /* Textarea Styling */
+  .chat-textarea {
+    width: 100%;
+    /* border-radius: 1.5em; */
+    padding-left: 2rem;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    min-height: 50px;
+    max-height: 200px;
+    resize: none;
+    outline: none;
+  }
+
+  
+  
+  .chat-textarea--disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+  }
+  
+  .chat-textarea--dark {
+    background-color: #0b0d0e; /* slate-800 */
+    color: rgba(255, 255, 255, 0.85);
+  }
+  
+  .chat-textarea--light {
+    background-color: #fbfbfb;
+    color: rgba(11, 13, 14, 0.85); /* slate-900 */
+  }
+  .chat-textarea--dark::-webkit-input-placeholder {
+    color: rgba(255, 255, 255, 0.5);
+  }
+  .chat-textarea--light::-webkit-input-placeholder {
+    color: rgba(0, 0, 0, 0.5);
+  }
+  /* Submit Button */
+  .chat-submit-button {
+    padding: 0.5rem;
+    border-radius: 9999px; /* Full rounded */
+    transition: 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .chat-submit-button--disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+  
+  .chat-submit-button--dark {
+    color: #ffffff;
+  }
+  
+  .chat-submit-button--dark:hover {
+    background-color: #1d252e; /* slate-700 */
+  }
+  
+  .chat-submit-button--light {
+    color: #0b0d0e; /* slate-900 */
+  }
+  
+  .chat-submit-button--light:hover {
+    background-color: #f1f5f9; /* slate-100 */
+  }
+  
+  /* Icon Size */
+  .icon-size {
+    height: 1.25rem;
+    width: 1.25rem;
+  }
+  

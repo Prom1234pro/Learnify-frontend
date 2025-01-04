@@ -1,0 +1,39 @@
+/* Theme Toggle Button */
+.theme-toggle-button {
+    padding: 0.5rem;
+    border-radius: 9999px;
+    transition: all 0.25s ease-in-out;
+  }
+  
+  .theme-toggle-button--fixed {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    z-index: 50;
+  }
+  
+  .theme-toggle-button--dark {
+    background-color: #0b0d0e; /* slate-800 */
+    color: #a855f7; /* yellow-500 */
+  }
+  
+  .theme-toggle-button--dark:hover {
+    background-color: #1d252e; /* slate-700 */
+  }
+  
+  .theme-toggle-button--light {
+    background-color: #ffffff; /* white */
+    color: #0b0d0e; /* slate-800 */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .theme-toggle-button--light:hover {
+    background-color: #ffffff27; /* slate-100 */
+  }
+  
+  /* Icon Size */
+  .icon-size {
+    height: 1.25rem; /* h-5 */
+    width: 1.25rem; /* w-5 */
+  }
+  

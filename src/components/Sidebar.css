@@ -1,0 +1,259 @@
+/* Sidebar.css */
+/* Base Layout Styles */
+.sidebar-container {
+    display: flex;
+    min-height: 100vh;
+  }
+  .main-content {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100%;
+  }
+/* Mobile Overlay */
+.sidebar-overlay {
+    inset: 0;
+    backdrop-filter: blur(4px);
+    transition: opacity 0.3s ease;
+  }
+  .sidebar-overlay.visible {
+    opacity: 1;
+    visibility: visible;
+  }
+  .sidebar-overlay.hidden {
+    opacity: 0;
+    visibility: hidden;
+  }
+  
+  /* Sidebar */
+  .sidebar{
+    transition: width 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: .6em;
+    font-size: 14px;
+  }
+  .mobile-sidebar {
+    display: none;
+  }
+  .sidebar-open {
+    width: 16rem;
+  }
+  .sidebar-closed {
+    width: 0;
+  }
+  .sidebar-md-open {
+    width: 4rem;
+  }
+  
+  /* Dark and Light Mode */
+  .sidebar-dark {
+    background-color: #7c3aed;;
+    color: #ffffff;
+  }
+
+  .sidebar-light {
+    background-color: #0b0d0e;
+    color: #ffffff;
+    border-right: 1px solid #e5e7eb;
+  }
+  
+  /* Header */
+  .sidebar-header {
+    padding-left: .6em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .sidebar-header img {
+    border-radius: 50%;
+  }
+
+
+/* Scrollbar Styles for Sidebar */
+.sidebar-content::-webkit-scrollbar {
+  width: 8px; /* Width of the scrollbar */
+}
+
+.sidebar-content::-webkit-scrollbar-thumb {
+  background-color: #6b7280; /* Color of the scrollbar thumb */
+  border-radius: 4px; /* Rounded edges for the thumb */
+}
+
+.sidebar-content::-webkit-scrollbar-thumb:hover {
+  background-color: #374151; /* Color when hovering */
+}
+
+.sidebar-content::-webkit-scrollbar-track {
+  background: transparent; /* Hides the scrollbar track */
+}
+
+/* Scrollbar styles for dark mode */
+.sidebar-dark .sidebar-content::-webkit-scrollbar {
+  width: 8px;
+}
+
+.sidebar-dark .sidebar-content::-webkit-scrollbar-thumb {
+  background-color: #374151;
+}
+
+.sidebar-dark .sidebar-content::-webkit-scrollbar-thumb:hover {
+  background-color: #1f2937;
+}
+
+.sidebar-dark .sidebar-content::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Scrollbar styles for Firefox */
+.sidebar-content {
+  scrollbar-width: thin; /* Makes the scrollbar thinner */
+  scrollbar-color: #6b7280 transparent; /* Thumb color and no track color */
+}
+
+.sidebar-dark .sidebar-content {
+  scrollbar-color: #374151 transparent;
+}
+
+
+
+  .logo {
+    height: 2rem;
+  }
+  .hidden-md {
+    display: none;
+  }
+  .block-md {
+    display: block;
+  }
+  
+  /* Buttons */
+  .btn-close,
+  .btn-new-chat,
+  .btn-settings,
+  .btn-upgrade {
+    padding: 0.5rem;
+    border-radius: .2em;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .new-chat {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .new-chat img {
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+  }
+  .btn-new-chat{
+    width: 100%;
+    margin-top: 1em;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .icon-new-chat {
+    display: none;
+  }
+  .btn-close:hover,
+  .btn-new-chat:hover,
+  .btn-settings:hover,
+  .btn-upgrade:hover {
+    background-color: #7c3aed;
+  }
+  .btn-close-dark:hover,
+  .btn-new-chat-dark:hover,
+  .btn-settings-dark:hover,
+  .btn-upgrade-dark:hover {
+    background-color: #6b21a8;
+  }
+  .btn-new-chat:hover .icon-new-chat {
+    display: block;
+  }
+  
+  /* Main Sidebar Content */
+  .sidebar-content {
+    flex: 1;
+  }
+  .recent-chats {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2em;
+    flex: 1;
+  }
+  .recent-chats-title {
+    font-size: 0.875rem;
+    font-weight: 600;
+    padding-left: .6em;
+  }
+  .recent-chats-title-dark {
+    color: #ffffff;
+  }
+  .chat-items {
+    height: 500px;
+    margin-top: 0.5rem;
+    overflow-y: auto;
+    gap: 0.25rem;
+  }
+  .chat-items ul li {
+    margin-top: .7rem;
+    padding: .3em .6em;
+    border-radius: .5em;
+    color: white;
+    cursor: pointer;
+  }
+  .chat-items-dark ul li {
+    margin-top: .7rem;
+    padding: .3em .6em;
+    border-radius: .5em;
+    color: white;
+    cursor: pointer;
+  }
+  .chat-items ul li:hover {
+   background-color: #7c3aed;
+  }
+
+  .chat-items-dark ul li:hover {
+    background-color: #6b21a8;
+   }
+  
+  /* Footer */
+  .sidebar-footer {
+    border-top: #fbfbfb 1px solid;
+  }
+  .sidebar-footer-dark {
+    border-color: #fbfbfb;
+  }
+  .footer-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  
+  /* Icon Styles */
+  .icon {
+    height: 1.25rem;
+    width: 1.25rem;
+  }
+  
+  @media (max-width: 800px) {
+    .mobile-sidebar {
+      transition: width 0.3s ease;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      font-size: 14px;
+      position: fixed;
+      z-index: 999;
+    }
+    .sidebar {
+      display: none;
+    }
+  }
