@@ -6,7 +6,7 @@ import { useNavigate } from 'react-router-dom'; // Import useNavigate
 
 import './UploadSection.css';
 
-const socket = io('https://backend-368k.onrender.com');
+const socket = io('https://learnify-ai-ff19ec5292d1.herokuapp.com');
 
 // eslint-disable-next-line react/prop-types
 const AnimatedButton = ({ children, onClick, disabled }) => {
@@ -67,7 +67,7 @@ const UploadSection = () => {
     });
 
     try {
-      const response = await fetch('https://backend-368k.onrender.com/extract-multiple-page-from-document', {
+      const response = await fetch('https://learnify-ai-ff19ec5292d1.herokuapp.com/extract-multiple-page-from-document', {
         method: 'POST',
         body: formData,
       });
@@ -94,7 +94,7 @@ const UploadSection = () => {
 
     const documentText = localStorage.getItem('uploadedDocument');
     try {
-      const response = await fetch('https://backend-368k.onrender.com/summarize', {
+      const response = await fetch('https://learnify-ai-ff19ec5292d1.herokuapp.com/summarize', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

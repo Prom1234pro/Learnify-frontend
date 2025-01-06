@@ -78,7 +78,7 @@ const Chatting = () => {
         // Call the API for a response
         const historyLog = [...messages, { user, text }]; // Include the latest user message
         const context = localStorage.getItem('uploadedDocument') || '';
-        const response = await fetch('https://backend-368k.onrender.com/chat-with-document', {
+        const response = await fetch('https://learnify-ai-ff19ec5292d1.herokuapp.com/chat-with-document', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
